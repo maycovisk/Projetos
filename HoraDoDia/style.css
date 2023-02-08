@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*---- IMPORTAR FONTE ROBOTO E UBUNTO----*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,900;1,200;1,600&family=Ubuntu:wght@400;500&display=swap');
+
+:root{
+    /*--cor0:#00804b;*/
+    --cor0:#e2be88;
+    --cor1:#a88145;
+    --cor2:#222;
+    --cor3:#000;
+    --cor4:#fff;
+
+    --fonte-padrao: sans-serif;
+    --fonte-ubuntu: 'Ubuntu', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: var(--cor0);
+    
+}
+.title{
+    color: var(--cor4);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-family: var(--fonte-ubuntu);
+}
+.container {
+    background-color:var(--cor4);
+    margin: auto;
+    margin-top: 40px;
+    width: 500px;
+    height: 400px;
+    border-radius: 6px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px var(--cor2);
+}
+#hora1, #hora2{
+    width: 280px;
+    height: 17px;
+    font-size: 20px;
+    font-family: var(--fonte-ubuntu);
+    color: var(--cor3);
+    text-align: center;
+    margin: auto;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+#img{
+    text-align: center;
+    margin: 30px auto;
+    padding: 15px;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: var(--cor2) solid 3px;
+}
+img:hover{
+    transform: scale(1.1);
+    border: var(--cor2) solid 2px;
+    box-shadow: 5px 5px 6px var(--cor2);
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    font-family: var(--fonte-ubuntu);
+    
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+footer a:hover{
+    color: var(--cor4);
+    text-decoration-line: underline;
+}
